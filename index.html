@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tree View</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <section class="folders">
+    <div class="tree-view">
+      <div class="folder folder--opened">
+        <div class="caret caret--opened">
+          <button class="caret__btn" type="button" aria-label="Button for toggle folder content">+</button>
+          <span class="caret__sign">Folder 1</span>
+        </div>
+        <ul class="branches">
+          <li>
+            <span class="file">
+              Item 1.1
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="folder folder--opened">
+        <div class="caret caret--opened">
+          <button class="caret__btn" type="button" aria-label="Button for toggle folder content">+</button>
+          <span class="caret__sign">Folder 2</span>
+        </div>
+        <ul class="branches">
+          <li class="folder">
+            <div class="caret">
+              <button class="caret__btn" type="button" aria-label="Button for toggle folder content">+</button>
+              <span class="caret__sign">Subfolder 2.1</span>
+            </div>
+            <ul class="branches">
+              <li>
+                <span class="file">
+                  File 2.1.1
+                </span>
+              </li>
+              <li>
+                <span class="file">
+                  File 2.1.2
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="file">
+              File 2.2
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="folder">
+        <div class="caret">
+          <button class="caret__btn" type="button" aria-label="Button for toggle folder content">+</button>
+          <span class="caret__sign">Folder 3 (closed at start)</span>
+        </div>
+        <ul class="branches">
+          <li class="folder">
+            <div class="caret">
+              <button class="caret__btn" type="button" aria-label="Button for toggle folder content">+</button>
+              <span class="caret__sign">Subfolder 3.1</span>
+            </div>
+            <ul class="branches">
+              <li>
+                <span class="file">
+                  File 3.1.1
+                </span>
+              </li>
+              <li>
+                <span class="file">
+                  File 3.1.2
+                </span>
+              </li>
+              <li>
+                <span class="file">
+                  File 3.1.3
+                </span>
+              </li>
+              <li>
+                <span class="file">
+                  File 3.1.4
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="file">
+              File 4
+            </span>
+          </li>
+          <li>
+            <span class="file">
+              File 5
+            </span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
